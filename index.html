@@ -44,7 +44,7 @@
 		<main>
 			<!-- ABOUT SECTION -->
 			<section>
-				<div>
+				<div class="sticky-header">
 					<h2 class="lightText">About</h2class>
 				</div>
 				<div class="about-contents">
@@ -83,7 +83,7 @@
 
 			<!-- EXPERIENCE SECTION -->
 			<section>
-				<div>
+				<div class="sticky-header">
 					<h2 class="lightText">Experience</h2>
 				</div>
 				<div class="experience-contents">
@@ -91,7 +91,7 @@
 					<div class="experience-card">
 						<p class="tenure">November 2023 - February 2024</p>
 						<div class="card-column">
-							<a href="/" target="_blank">
+							<a class="card-header-link" href="/" target="_blank">
 								<h3 class="anchor-text card-header">
 									Backend Intern・Pixel 8 Web Solutions and Consultancy Inc. ICON
 								</h3>
@@ -117,7 +117,7 @@
 					<div class="experience-card">
 						<p class="tenure">February 2024 - June 2024</p>
 						<div class="card-column">
-							<a href="/" target="_blank">
+							<a class="card-header-link" href="/" target="_blank">
 								<h3 class="anchor-text card-header">
 									Frontend Intern・Pixel 8 Web Solutions and Consultancy Inc. ICON
 								</h3>
@@ -146,42 +146,60 @@
 
 			<!-- PROJECTS SECTION -->
 			<section>
-				<div>
+				<div class="sticky-header">
 					<h2 class="lightText">Projects</h2>
 				</div>
-				<div class="projects-contents">
+				<div class="project-contents">
+					<!-- first project -->
 					<div class="project-card">
 						<div class="project-image-container">
 							<img src="./public/odin-portfolio.png" alt="my first portfolio" />
 						</div>
 						<div class="card-column">
-							<a href="/" target="_blank">
+							<a class="card-header-link" href="/" target="_blank">
 								<h3 class="anchor-text card-header">
-									Frontend Intern・Pixel 8 Web Solutions and Consultancy Inc. ICON
+									The Odin Project - Foundations Course - Landing Page
 								</h3>
 							</a>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-								mollitia odio? Esse est facilis ab voluptatibus. In atque optio
-								ratione debitis, praesentium officia porro id veniam ipsa vero
-								enim quae.
+								A project based from The Odin Project free resource in the internet. During the foundations course, 
+								I am required to create a portfolio based on the provided design file. However, it does not support yet
+								mobile responsiveness.
 							</p>
-							<a href="">ICON + TEXT</a>
+							<a href="https://github.com/xamdp/landing-page" target="_blank" class="anchor-text project-stat-link"><i class="fa-solid fa-star"></i><p>0</p></a>
 							<div class="tag-container">
-								<div class="tag"><p>PHP</p></div>
-								<div class="tag"><p>Git</p></div>
-								<div class="tag"><p>GitLab</p></div>
-								<div class="tag"><p>PHPUnit</p></div>
-								<div class="tag"><p>Codeception</p></div>
-								<div class="tag"><p>Insomnia</p></div>
-								<div class="tag"><p>Composer</p></div>
+								<div class="tag"><p>HTML</p></div>
+								<div class="tag"><p>CSS</p></div>
+							</div>
+						</div>
+					</div>
+					<!-- second project -->
+					<div class="project-card">
+						<div class="project-image-container">
+							<img src="./public/sketchpad.png" alt="my first portfolio" />
+						</div>
+						<div class="card-column">
+							<a class="card-header-link" href="/" target="_blank">
+								<h3 class="anchor-text card-header">
+									The Odin Project - Foundations Course - Etch-a-Sketch
+								</h3>
+							</a>
+							<p>
+								A project where you will be asked to generate a number of boxes per side. Which will then generate that 
+								number of sides x number of sides of grid box. The generated boxes, when hovered, will change color dynamically.
+							</p>
+							<a href="https://github.com/xamdp/landing-page" target="_blank" class="anchor-text project-stat-link"><i class="fa-solid fa-star"></i><p>0</p></a>
+							<div class="tag-container">
+								<div class="tag"><p>HTML</p></div>
+								<div class="tag"><p>CSS</p></div>
+								<div class="tag"><p>JavaScript</p></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<a href="/"><p class="anchor-text">View Full Project Archive ICON</p></a>
+				<a href="/" class="project-archive-link"><p>View Full Project Archive <span class="right-arrow">&rarr;</span></p></a>
 			</section>
 		</main>
-		<footer><p>Made from scratch, HTML and CSS.</p></footer>
+		<footer><p>Coded in <a class="anchor-text" href="https://neovim.io/" target="_blank">Neovim</a>.<br> Built with HTML and CSS, and deployed with <a class="anchor-text" href="https://www.netlify.com/" target="_blank">Netlify</a>.</p></footer>
 	</body>
 </html>
