@@ -19,31 +19,32 @@
 		/>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body>
+	<body id="top-of-page">
 		<div class="underlay"></div>
 		<header>
-			<a href="">
+			<a href="/">
 				<h1>Diego Docot</h1>
 			</a>
 			<h4>Junior Fullstack Developer</h4>
 			<p>I like building websites and curious how they work underneath.</p>
 			<nav>
-				<a><p>About</p></a>
-				<a><p>Experience</p></a>
-				<a><p>Projects</p></a>
+				<a class="anchor-text" href="#about"><p>About</p></a>
+				<a class="anchor-text" href="#experience"><p>Experience</p></a>
+				<a class="anchor-text" href="#projects"><p>Projects</p></a>
 			</nav>
-			<div class="socials">
-				<a href="">ICON</a>
-				<a href="">ICON</a>
-				<a href="">ICON</a>
-				<a href="">ICON</a>
-				<a href="">ICON</a>
-				<a href="">ICON</a>
+			<div class="social-link-container">
+				<a class="social-link" target="_blank" href="https://github.com/xamdp"><i class="fa-brands fa-github"></i></a>
+				<a class="social-link" target="_blank" href="https://www.linkedin.com/in/diego-docot/"><i class="fa-brands fa-linkedin"></i></a>
+				<a class="social-link" target="_blank" href="https://x.com/xamdp"><i class="fa-brands fa-twitter"></i></a>
+				<a class="social-link" target="_blank" href="https://discord.com/users/590062025321742356"><i class="fa-brands fa-discord"></i></a>
+				<a class="social-link" target="_blank" href="https://dinq.me/xamdp"><i class="fa-regular fa-address-card"></i></a>
+				<a class="social-link" target="_blank" href="https://www.youtube.com/@xamdp"><i class="fa-brands fa-youtube"></i></a>
+				<!-- <a class="anchor-text" href="">ICON</a> -->
 			</div>
 		</header>
 		<main>
 			<!-- ABOUT SECTION -->
-			<section>
+			<section id="about">
 				<div class="sticky-header">
 					<h2 class="lightText">About</h2class>
 				</div>
@@ -82,14 +83,14 @@
 			</section>
 
 			<!-- EXPERIENCE SECTION -->
-			<section>
+			<section id="experience">
 				<div class="sticky-header">
 					<h2 class="lightText">Experience</h2>
 				</div>
 				<div class="experience-contents">
 					<!-- FIRST EXPERIENCE -->
 					<div class="experience-card">
-						<p class="tenure">November 2023 - February 2024</p>
+						<p class="tenure">Nov 2023 - Feb 2024</p>
 						<div class="card-column">
 							<a class="card-header-link" href="/" target="_blank">
 								<h3 class="anchor-text card-header">
@@ -115,7 +116,7 @@
 					</div>
 					<!-- SECOND EXPERIENCE -->
 					<div class="experience-card">
-						<p class="tenure">February 2024 - June 2024</p>
+						<p class="tenure">Feb 2024 - Jun 2024</p>
 						<div class="card-column">
 							<a class="card-header-link" href="/" target="_blank">
 								<h3 class="anchor-text card-header">
@@ -129,13 +130,11 @@
 								enim quae.
 							</p>
 							<div class="tag-container">
-								<div class="tag"><p>PHP</p></div>
-								<div class="tag"><p>Git</p></div>
+								<div class="tag"><p>Quasar</p></div>
+								<div class="tag"><p>Vue.js</p></div>
+								<div class="tag"><p>JavaScript</p></div>
 								<div class="tag"><p>GitLab</p></div>
-								<div class="tag"><p>PHPUnit</p></div>
-								<div class="tag"><p>Codeception</p></div>
-								<div class="tag"><p>Insomnia</p></div>
-								<div class="tag"><p>Composer</p></div>
+								<div class="tag"><p>Cypress</p></div>
 							</div>
 						</div>
 					</div>
@@ -145,7 +144,7 @@
 			</section>
 
 			<!-- PROJECTS SECTION -->
-			<section>
+			<section id="projects">
 				<div class="sticky-header">
 					<h2 class="lightText">Projects</h2>
 				</div>
@@ -200,6 +199,15 @@
 				<a href="/" class="project-archive-link"><p>View Full Project Archive <span class="right-arrow">&rarr;</span></p></a>
 			</section>
 		</main>
-		<footer><p>Coded in <a class="anchor-text" href="https://neovim.io/" target="_blank">Neovim</a>.<br> Built with HTML and CSS, and deployed with <a class="anchor-text" href="https://www.netlify.com/" target="_blank">Netlify</a>.</p></footer>
+		<footer>
+			<p>
+				Coded in <a class="anchor-text" href="https://neovim.io/" target="_blank">Neovim</a>.<br /> 
+				Built with HTML and CSS, and deployed with <a class="anchor-text" href="https://www.netlify.com/" target="_blank">Netlify</a>.<br />
+				All text is set in the <a class="anchor-text" href="https://rsms.me/inter/" target="_blank">Inter</a> typeface.
+			</p>
+			<a href="#top-of-page" class="scroll-to-top">
+				<i class="fa-solid fa-arrow-up"></i>
+			</a>
+		</footer>
 	</body>
 </html>
