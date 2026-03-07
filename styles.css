@@ -221,6 +221,11 @@ section h2 {
 }
 
 
+.anchor-icon {
+	padding-left: 0.5rem;
+}
+
+
 .tag-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -328,8 +333,20 @@ footer p {
 }
 
 @media (min-width: 640px) {
+	header {
+		max-width: unset;
+	}
+
 	header h1 {
-		font-size: 3rem;
+		font-size: 3.2rem;
+	}
+
+	header h4 {
+		font-size: 1.3rem;
+	}
+
+	header p {
+		max-width: 230px;
 	}
 
 	nav {
@@ -347,6 +364,14 @@ footer p {
 
 	.card-column {
 		grid-column: span 3 / span 3;
+	}
+
+	.social-link-container {
+		gap: 1.5rem;
+	}
+
+	.social-link-container i {
+		font-size: 1.6rem;
 	}
 }
 
@@ -368,27 +393,50 @@ footer p {
 		position: sticky;
 		top: 0;
 		margin-left: auto;
-		height: fit-content;
+		height: 100vh;
+		padding-bottom: 6rem;
+	}
+
+	header h1 {
+		font-size: 3.2rem;
+	}
+
+	header h4 {
+		font-size: 1.3rem;
+	}
+
+	header p {
+		max-width: 240px;
 	}
 
 	nav {
 		display: flex;
 		flex-direction: column;
+		gap: 0.5rem;
+		flex: 1;
+	}
+
+	nav p {
+		font-size: 1rem;
+	}
+
+	.social-link-container {
+		gap: 1.5rem;
+	}
+
+	.social-link-container i {
+		font-size: 1.6rem;
 	}
 
 	header,
 	main {
 		padding-top: 6rem;
-		max-width: 600px;
+		max-width: 700px;
 		width: 100%;
 	}
 
 	.sticky-header {
 		display: none;
-	}
-
-	.project-image-container {
-		order: 0;
 	}
 
 	footer {
