@@ -119,6 +119,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	scroll-margin-top: 2rem;
 }
 
 section h2 {
