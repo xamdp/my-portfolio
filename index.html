@@ -1,243 +1,442 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Diego Docot</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body id="top-of-page">
-		<div class="underlay"></div>
-		<header>
-			<a href="/">
-				<h1>Diego Docot</h1>
-			</a>
-			<h4>Junior Fullstack Developer</h4>
-			<p>I like building websites and curious how they work underneath.</p>
-			<nav>
-				<a class="anchor-text" href="#about"><p>About</p></a>
-				<a class="anchor-text" href="#experience"><p>Experience</p></a>
-				<a class="anchor-text" href="#projects"><p>Projects</p></a>
-			</nav>
-			<div class="social-link-container">
-				<a class="social-link" target="_blank" href="https://github.com/xamdp"><i class="fa-brands fa-github"></i></a>
-				<a class="social-link" target="_blank" href="https://www.linkedin.com/in/diego-docot/"><i class="fa-brands fa-linkedin"></i></a>
-				<a class="social-link" target="_blank" href="https://x.com/xamdp"><i class="fa-brands fa-twitter"></i></a>
-				<a class="social-link" target="_blank" href="https://discord.com/users/590062025321742356"><i class="fa-brands fa-discord"></i></a>
-				<a class="social-link" target="_blank" href="https://dinq.me/xamdp"><i class="fa-regular fa-address-card"></i></a>
-				<a class="social-link" target="_blank" href="https://www.youtube.com/@xamdp"><i class="fa-brands fa-youtube"></i></a>
-				<!-- <a class="anchor-text" href="">ICON</a> -->
-			</div>
-		</header>
-		<main>
-			<!-- ABOUT SECTION -->
-			<section id="about">
-				<div class="sticky-header">
-					<h2 class="lightText">About</h2class>
-				</div>
-				<div class="about-contents">
-					<p>
-						Hello my name is Diego, aka <a taget="_blank" href="https://dinq.me/xamdp" class="anchor-text">xamdp</a> I am fullstack developer, (Junior) :), I aspire to be a self-taught fullstack developer. My goal for this portfolio, is to fill it with many projects I can do until I can no longer can.
-					</p>
-					<p>
-						I am currently in Japan as a exchange student 留学生, learning 日本語 and fullstack web development side by side.
-					</p>
-					<p>
-						I did three internships in total when I was in the Philippines, this internship is based from Legazpi, Bicol. All internships are remote.
-						I first landed in backend development teams. Before you can do any actual tasks, I was given 9 tasks that relates to usage of PHP. In the last task, I was asked to create a simple CRUD API functions. At first, I actually don't know what I was doing. But, I persisted and eventually finished the task.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Diego Docot - Junior Fullstack Developer specializing in building modern web applications. Learn about my experience, projects, and skills."
+    />
+    <meta
+      property="og:title"
+      content="Diego Docot - Junior Fullstack Developer"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://xamdportfolio.netlify.app" />
+    <meta property="og:url" content="https://xamdportfolio.netlify.app" />
+    <link rel="icon" type="image/png" href="./public/favicon-96x96.png" />
+    <title>Diego Docot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top-of-page">
+    <div class="underlay"></div>
+    <header>
+      <a href="/">
+        <h1>Diego Docot</h1>
+      </a>
+      <h4>Junior Fullstack Developer</h4>
+      <p>I like building websites and curious how they work underneath.</p>
+      <nav>
+        <a class="anchor-text" href="#about"><p>About</p></a>
+        <a class="anchor-text" href="#experience"><p>Experience</p></a>
+        <a class="anchor-text" href="#projects"><p>Projects</p></a>
+      </nav>
+      <div class="social-link-container">
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://github.com/xamdp"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/diego-docot/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://x.com/xamdp"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://discord.com/users/590062025321742356"
+          ><i class="fa-brands fa-discord"></i
+        ></a>
+        <a
+          class="social-link"
+          target="_blank"
+          href="https://dinq.me/xamdp"
+          rel="noopener noreferrer"
+          ><i class="fa-regular fa-address-card"></i
+        ></a>
+        <a
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.youtube.com/@xamdp"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <!-- <a class="anchor-text" href="">ICON</a> -->
+      </div>
+    </header>
+    <main>
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <div class="sticky-header">
+          <h2 class="lightText">About</h2>
+        </div>
+        <div class="about-contents">
+          <p>
+            Hello my name is Diego, aka
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://dinq.me/xamdp"
+              class="anchor-text"
+              >xamdp</a
+            >
+            I am fullstack developer, (Junior) :), I aspire to be a self-taught
+            fullstack developer. My goal for this portfolio, is to fill it with
+            many projects I can do until I can no longer can.
+          </p>
+          <p>
+            I am currently in Japan as a exchange student 留学生, learning
+            日本語 and fullstack web development side by side.
+          </p>
+          <p>
+            I did three internships in total when I was in the Philippines, this
+            internship is based from Legazpi, Bicol. All internships are remote.
+            I first landed in backend development teams. Before you can do any
+            actual tasks, I was given 9 tasks that relates to usage of PHP. In
+            the last task, I was asked to create a simple CRUD API functions. At
+            first, I actually don't know what I was doing. But, I persisted and
+            eventually finished the task.
+          </p>
+          <p>
+            Upon finishing the task, there was a call with my team leader and he
+            reviewed my code and the process how I did it. And, gave me tips on
+            how to better write and understand an idiomatic code.
+          </p>
+          <p>
+            From there, I got actually involved in teams, understands how design
+            files from UI/UX team passed down to backend teams, got to know the
+            next steps on what to do based on provided data flow diagrams, the
+            creation of API documentation, because without it, it seems very
+            hard on what to do with the API endpoint you will be creating. And,
+            its requirements of that endpoint.
+          </p>
+        </div>
+      </section>
 
-					</p>
-					<p>
-						Upon finishing the task, there was a call with my team leader and he reviewed my code and the process how I did it. And, gave me tips on how to better write and understand an idiomatic code.
-					</p>
-					<p>
-						From there, I got actually involved in teams, understands how design files from UI/UX team passed down to backend teams, got to know the next steps on what to do based on provided data flow diagrams, the creation of API documentation, because without it, it seems very hard on what to do with the API endpoint you will be creating. And, its requirements of that endpoint.
-					</p>
-				</div>
-			</section>
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience">
+        <div class="sticky-header">
+          <h2 class="lightText">Experience</h2>
+        </div>
+        <div class="experience-contents">
+          <!-- FIRST EXPERIENCE -->
+          <div class="experience-card">
+            <p class="tenure">Nov 2023 - Feb 2024</p>
+            <div class="card-column">
+              <a
+                class="card-header-link"
+                rel="noopener noreferrer"
+                href="https://pixel8websolutions.com/"
+                target="_blank"
+              >
+                <h3 class="anchor-text card-header">
+                  Backend Intern・Pixel8 Web Solutions and Consultancy Inc.
+                  <i class="fa-solid fa-link anchor-icon"></i>
+                </h3>
+              </a>
+              <p>
+                Write API Documentation and RESTful API based on the API
+                Documentation and Data Flow Diagrams. Write unit tests with
+                PHPUnit / Codecepetion to be tested with tools like Postman and
+                Insomnia. Interacts with local MySQL database using this
+                <a
+                  class="anchor-text"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/ThingEngineer/PHP-MySQLi-Database-Class"
+                  >wrapper</a
+                >.
+              </p>
+              <div class="tag-container">
+                <div class="tag"><p>PHP</p></div>
+                <div class="tag"><p>Git</p></div>
+                <div class="tag"><p>GitLab</p></div>
+                <div class="tag"><p>PHPUnit</p></div>
+                <div class="tag"><p>Codeception</p></div>
+                <div class="tag"><p>Insomnia</p></div>
+                <div class="tag"><p>Composer</p></div>
+              </div>
+            </div>
+          </div>
+          <!-- SECOND EXPERIENCE -->
+          <div class="experience-card">
+            <p class="tenure">Feb 2024 - Jun 2024</p>
+            <div class="card-column">
+              <a
+                class="card-header-link"
+                href="https://pixel8websolutions.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <h3 class="anchor-text card-header">
+                  Frontend Intern・Pixel8 Web Solutions and Consultancy Inc.
+                  <i class="fa-solid fa-link anchor-icon"></i>
+                </h3>
+              </a>
+              <p>
+                Use
+                <a
+                  class="anchor-text"
+                  href="https://quasar.dev/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Quasar</a
+                >
+                Framework and
+                <a
+                  class="anchor-text"
+                  href="https://vuejs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Vue.js</a
+                >
+                for creating the user interface of both desktop and mobile,
+                design files are provided by the UI/UX team. Implements
+                functionality (read, add, update, and delete) using JavaScript
+                and
+                <a
+                  class="anchor-text"
+                  href="https://github.com/axios/axios"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Axios</a
+                >.
+              </p>
+              <div class="tag-container">
+                <div class="tag"><p>Quasar</p></div>
+                <div class="tag"><p>Vue.js</p></div>
+                <div class="tag"><p>JavaScript</p></div>
+                <div class="tag"><p>GitLab</p></div>
+                <div class="tag"><p>Cypress</p></div>
+              </div>
+            </div>
+          </div>
+          <!-- THIRD EXPERIENCE -->
+          <div class="experience-card">
+            <p class="tenure">Jun 2024 - Aug 2024</p>
+            <div class="card-column">
+              <a
+                class="card-header-link"
+                href="https://pixel8websolutions.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 class="anchor-text card-header">
+                  Automation Intern・Pixel8 Web Solutions and Consultancy Inc.
+                  <i class="fa-solid fa-link anchor-icon"></i>
+                </h3>
+              </a>
+              <p>
+                Create, build and run docker containers, also with multiple
+                containers with docker compose. Create Kubernetes cluster using
+                Kind, minikube and with Docker-Desktop. Create GitLab CI/CD
+                pipeline that automates file transfer between two projects
+                repositories that isolates jobs using rsync, bash script, and
+                Git for automated pushing to the other remote repository.
+              </p>
+              <div class="tag-container">
+                <div class="tag"><p>Docker</p></div>
+                <div class="tag"><p>Kubernetes</p></div>
+                <div class="tag"><p>GitLab CI/CD</p></div>
+                <div class="tag"><p>Linux</p></div>
+                <div class="tag"><p>Bash</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="anchor-text" href="./public/Diego_resume.pdf" target="_blank"
+          ><p>
+            View Full Resume
+            <i class="fa-solid fa-arrow-right anchor-icon"></i></p
+        ></a>
+      </section>
 
-			<!-- EXPERIENCE SECTION -->
-			<section id="experience">
-				<div class="sticky-header">
-					<h2 class="lightText">Experience</h2>
-				</div>
-				<div class="experience-contents">
-					<!-- FIRST EXPERIENCE -->
-					<div class="experience-card">
-						<p class="tenure">Nov 2023 - Feb 2024</p>
-						<div class="card-column">
-							<a class="card-header-link" href="https://pixel8websolutions.com/" target="_blank">
-								<h3 class="anchor-text card-header">
-									Backend Intern・Pixel8 Web Solutions and Consultancy Inc. <i class="fa-solid fa-link anchor-icon"></i>
-								</h3>
-							</a>
-							<p>
-								Write API Documentation and RESTful API based on the API Documentation and Data Flow Diagrams.
-								Write unit tests with PHPUnit / Codecepetion to be tested with tools like Postman and Insomnia.
-								Interacts with local MySQL database using this <a class="anchor-text" target="_blank" href="https://github.com/ThingEngineer/PHP-MySQLi-Database-Class">wrapper</a>.
-							</p>
-							<div class="tag-container">
-								<div class="tag"><p>PHP</p></div>
-								<div class="tag"><p>Git</p></div>
-								<div class="tag"><p>GitLab</p></div>
-								<div class="tag"><p>PHPUnit</p></div>
-								<div class="tag"><p>Codeception</p></div>
-								<div class="tag"><p>Insomnia</p></div>
-								<div class="tag"><p>Composer</p></div>
-							</div>
-						</div>
-					</div>
-					<!-- SECOND EXPERIENCE -->
-					<div class="experience-card">
-						<p class="tenure">Feb 2024 - Jun 2024</p>
-						<div class="card-column">
-							<a class="card-header-link" href="https://pixel8websolutions.com/" target="_blank">
-								<h3 class="anchor-text card-header">
-									Frontend Intern・Pixel8 Web Solutions and Consultancy Inc. <i class="fa-solid fa-link anchor-icon"></i>
-								</h3>
-							</a>
-							<p>
-								Use <a class="anchor-text" href="https://quasar.dev/" target="_blank">Quasar</a> Framework and <a class="anchor-text" href="https://vuejs.org/" target="_blank">Vue.js</a> for creating the user interface of both desktop and mobile, design files are provided by the UI/UX team. Implements functionality (read, add, update, and delete) using JavaScript and <a class="anchor-text" href="https://github.com/axios/axios" target="_blank">Axios</a>.
-							</p>
-							<div class="tag-container">
-								<div class="tag"><p>Quasar</p></div>
-								<div class="tag"><p>Vue.js</p></div>
-								<div class="tag"><p>JavaScript</p></div>
-								<div class="tag"><p>GitLab</p></div>
-								<div class="tag"><p>Cypress</p></div>
-							</div>
-						</div>
-					</div>
-					<!-- THIRD EXPERIENCE -->
-					<div class="experience-card">
-						<p class="tenure">Jun 2024 - Aug 2024</p>
-						<div class="card-column">
-							<a class="card-header-link" href="https://pixel8websolutions.com/" target="_blank">
-								<h3 class="anchor-text card-header">
-									Automation Intern・Pixel8 Web Solutions and Consultancy Inc. <i class="fa-solid fa-link anchor-icon"></i>
-								</h3>
-							</a>
-							<p>
-								Create, build and run docker containers, also with multiple containers with docker compose.
-								Create Kubernetes cluster using Kind, minikube and with Docker-Desktop.
-								Create GitLab CI/CD pipeline that automates file transfer between two projects repositories that isolates jobs using rsync, bash script, and Git for automated pushing to the other remote repository.
-							</p>
-							<div class="tag-container">
-								<div class="tag"><p>Docker</p></div>
-								<div class="tag"><p>Kubernetes</p></div>
-								<div class="tag"><p>GitLab CI/CD</p></div>
-								<div class="tag"><p>Linux</p></div>
-								<div class="tag"><p>Bash</p></div>
-							</div>
-						</div>
-					</div>
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <div class="sticky-header">
+          <h2 class="lightText">Projects</h2>
+        </div>
+        <div class="project-contents">
+          <!-- first project -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="./public/odin-portfolio.png" alt="my first portfolio" />
+            </div>
+            <div class="card-column">
+              <a
+                class="card-header-link"
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 class="anchor-text card-header">
+                  The Odin Project - Foundations Course - Landing Page
+                </h3>
+              </a>
+              <p>
+                A project based from The Odin Project free resource in the
+                internet. During the foundations course, I am required to create
+                a portfolio based on the provided design file. However, it does
+                not support yet mobile responsiveness.
+              </p>
+              <a
+                href="https://github.com/xamdp/landing-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="anchor-text project-stat-link"
+                ><i class="fa-solid fa-star"></i>
+                <p>0</p></a
+              >
+              <div class="tag-container">
+                <div class="tag"><p>HTML</p></div>
+                <div class="tag"><p>CSS</p></div>
+              </div>
+            </div>
+          </div>
+          <!-- second project -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="./public/sketchpad.png" alt="my first portfolio" />
+            </div>
+            <div class="card-column">
+              <a
+                class="card-header-link"
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3 class="anchor-text card-header">
+                  The Odin Project - Foundations Course - Etch-a-Sketch
+                </h3>
+              </a>
+              <p>
+                A project where you will be asked to generate a number of boxes
+                per side. Which will then generate that number of sides x number
+                of sides of grid box. The generated boxes, when hovered, will
+                change color dynamically.
+              </p>
+              <a
+                href="https://github.com/xamdp/landing-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="anchor-text project-stat-link"
+                ><i class="fa-solid fa-star"></i>
+                <p>0</p></a
+              >
+              <div class="tag-container">
+                <div class="tag"><p>HTML</p></div>
+                <div class="tag"><p>CSS</p></div>
+                <div class="tag"><p>JavaScript</p></div>
+              </div>
+            </div>
+          </div>
 
-				</div>
-				<a class="anchor-text" href="./public/Diego_resume.pdf" target="_blank"><p>View Full Resume <i class="fa-solid fa-arrow-right anchor-icon"></i> </p></a>
-			</section>
-
-			<!-- PROJECTS SECTION -->
-			<section id="projects">
-				<div class="sticky-header">
-					<h2 class="lightText">Projects</h2>
-				</div>
-				<div class="project-contents">
-					<!-- first project -->
-					<div class="project-card">
-						<div class="project-image-container">
-							<img src="./public/odin-portfolio.png" alt="my first portfolio" />
-						</div>
-						<div class="card-column">
-							<a class="card-header-link" href="/" target="_blank">
-								<h3 class="anchor-text card-header">
-									The Odin Project - Foundations Course - Landing Page
-								</h3>
-							</a>
-							<p>
-								A project based from The Odin Project free resource in the internet. During the foundations course, 
-								I am required to create a portfolio based on the provided design file. However, it does not support yet
-								mobile responsiveness.
-							</p>
-							<a href="https://github.com/xamdp/landing-page" target="_blank" class="anchor-text project-stat-link"><i class="fa-solid fa-star"></i><p>0</p></a>
-							<div class="tag-container">
-								<div class="tag"><p>HTML</p></div>
-								<div class="tag"><p>CSS</p></div>
-							</div>
-						</div>
-					</div>
-					<!-- second project -->
-					<div class="project-card">
-						<div class="project-image-container">
-							<img src="./public/sketchpad.png" alt="my first portfolio" />
-						</div>
-						<div class="card-column">
-							<a class="card-header-link" href="/" target="_blank">
-								<h3 class="anchor-text card-header">
-									The Odin Project - Foundations Course - Etch-a-Sketch
-								</h3>
-							</a>
-							<p>
-								A project where you will be asked to generate a number of boxes per side. Which will then generate that 
-								number of sides x number of sides of grid box. The generated boxes, when hovered, will change color dynamically.
-							</p>
-							<a href="https://github.com/xamdp/landing-page" target="_blank" class="anchor-text project-stat-link"><i class="fa-solid fa-star"></i><p>0</p></a>
-							<div class="tag-container">
-								<div class="tag"><p>HTML</p></div>
-								<div class="tag"><p>CSS</p></div>
-								<div class="tag"><p>JavaScript</p></div>
-							</div>
-						</div>
-					</div>
-
-					<!-- third project -->
-					<div class="project-card">
-						<div class="project-image-container">
-							<img src="./public/movie-gallery.png" alt="Movie Gallery" />
-						</div>
-						<div class="card-column">
-							<a class="card-header-link" href="https://movgal.netlify.app/" target="_blank">
-								<h3 class="anchor-text card-header">
-									React Project - Movie Gallery
-								</h3>
-							</a>
-							<p>
-								A movie gallery website, where it showcases trending movies based on how much a movie was searched by users.
-								Has a optimized search functionality that debounces the search input by half a second. It uses Appwrite as for backend.
-							</p>
-							<a href="https://github.com/xamdp/movie-react-app" target="_blank" class="anchor-text project-stat-link"><i class="fa-solid fa-star"></i><p>0</p></a>
-							<div class="tag-container">
-								<div class="tag"><p>ReactJS</p></div>
-								<div class="tag"><p>tailwindcss</p></div>
-								<div class="tag"><p>Appwrite</p></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="https://github.com/xamdp?tab=repositories" target="_blank" class="project-archive-link"><p>View Full Project Archive <span class="right-arrow">&rarr;</span></p></a>
-			</section>
-		</main>
-		<footer>
-			<p>
-				Coded in <a class="anchor-text" href="https://neovim.io/" target="_blank">Neovim</a>.<br /> 
-				Built with HTML and CSS, and deployed with <a class="anchor-text" href="https://www.netlify.com/" target="_blank">Netlify</a>.<br />
-				All text is set in the <a class="anchor-text" href="https://rsms.me/inter/" target="_blank">Inter</a> typeface.
-			</p>
-			<a href="#top-of-page" class="scroll-to-top">
-				<i class="fa-solid fa-arrow-up"></i>
-			</a>
-		</footer>
-	</body>
+          <!-- third project -->
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="./public/movie-gallery.png" alt="Movie Gallery" />
+            </div>
+            <div class="card-column">
+              <a
+                class="card-header-link"
+                href="https://movgal.netlify.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <h3 class="anchor-text card-header">
+                  React Project - Movie Gallery
+                </h3>
+              </a>
+              <p>
+                A movie gallery website, where it showcases trending movies
+                based on how much a movie was searched by users. Has a optimized
+                search functionality that debounces the search input by half a
+                second. It uses Appwrite as for backend.
+              </p>
+              <a
+                href="https://github.com/xamdp/movie-react-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="anchor-text project-stat-link"
+                ><i class="fa-solid fa-star"></i>
+                <p>0</p></a
+              >
+              <div class="tag-container">
+                <div class="tag"><p>ReactJS</p></div>
+                <div class="tag"><p>tailwindcss</p></div>
+                <div class="tag"><p>Appwrite</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/xamdp?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-archive-link"
+          ><p>
+            View Full Project Archive <span class="right-arrow">&rarr;</span>
+          </p></a
+        >
+      </section>
+    </main>
+    <footer>
+      <p>
+        Coded in
+        <a
+          class="anchor-text"
+          href="https://neovim.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Neovim</a
+        >.<br />
+        Built with HTML and CSS, and deployed with
+        <a
+          class="anchor-text"
+          href="https://www.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Netlify</a
+        >.<br />
+        All text is set in the
+        <a
+          class="anchor-text"
+          href="https://rsms.me/inter/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Inter</a
+        >
+        typeface.
+      </p>
+      <a href="#top-of-page" class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </footer>
+  </body>
 </html>
